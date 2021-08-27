@@ -8,8 +8,8 @@ import Auth from '../../utils/auth';
 import { useDispatch, useSelector } from 'react-redux';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
-const dbKey = process.env.DB_KEY;
-const stripePromise = loadStripe(`${dbKey}`);
+
+const stripePromise = loadStripe('pk_live_51JRl0lCfJBOpRdEu9reZagN3NYerojS35NM00d0SllPh0infxrCCQCUROTKbZ92bGQwTllkiKilYlkfTa51VpZaA00MCgqhyLC');
 
 const Cart = () => {
 
